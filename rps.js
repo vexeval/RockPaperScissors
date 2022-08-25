@@ -17,7 +17,7 @@ function getComputerChoice() {
             result = 'Scissors'
             break;
         default:
-            console.error("Choice not in range");
+            console.error("RPT- Choice not in range");
             break;
     }
     console.log(`Computer chose ${result}`)
@@ -26,7 +26,7 @@ function getComputerChoice() {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        const playerSelection = prompt("Input Decision:\n\nRock\nPaper\nScissors\n\nInputting nothing stops the game.");
+        let playerSelection = prompt("Input Decision:\n\nRock\nPaper\nScissors\n\nInputting nothing stops the game.");
 
         if (playerSelection = null) return console.log("Game Exited");
 
@@ -38,4 +38,4 @@ function game() {
     
 }
 
-  
+game();
